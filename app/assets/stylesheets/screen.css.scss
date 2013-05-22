@@ -1,0 +1,81 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ $pink: #FFD2CB;
+ $white: #ebe7e4;
+ $raspberry: #E86786;
+ $blueberry: #96B5AD;
+ $blackberry: #281916;
+
+ $green: #628029;
+
+ $margin: 5%;
+ $marginH: 2%;
+
+@import "compass/reset";
+@import "compass/css3/text-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+
+#header {
+		background: $blackberry;
+		text-align: left;
+		margin-top: -40px;
+		padding: 20px;
+		h1 {
+		color: $white;
+		font-size: 70px;
+		  @include single-text-shadow(2px, 2px);
+		margin: 40px 0 0 $marginH;
+		}
+		h2 {
+		color: $blueberry;
+		margin: 10px 0 0 $marginH + 4%;
+		font-weight: bold;
+		}
+		p {
+		color: $green;
+		}
+	}
+
+a {
+color: $blueberry;
+margin: $margin;
+font-weight: bold;
+}
+
+p {
+color:  $blackberry;
+margin: 10px 0 10px 10px;
+
+	a {
+	color: $blueberry;
+	margin: 0 0 0 0;
+	font-weight: normal;
+	}
+}
+
+body {
+font-family: "Helvetica Neue", Arial, sans-serif;
+padding: 10px;
+text-align:center; /*For IE6 Shenanigans*/  
+margin: 0;
+padding: 0;
+background: $green; }
+
+#wrapper{  
+   width:800px;  
+   margin:0 auto;
+   text-align:left; 
+   positiion: relative;  
+}  
+
+.grad {
+	margin: 3%;
+	padding: 1%;
+	background-color: $white;
+	@include border-radius(10px, 10px);
+  	@include single-box-shadow;
+}
