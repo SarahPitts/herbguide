@@ -18,6 +18,7 @@
 @import "compass/css3/text-shadow";
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
+@import "compass/typography/links/link-colors";
 
 #header {
 		background: $blackberry;
@@ -43,18 +44,12 @@
 			margin: $marginH;
 			font-weight: normal;
 			text-decoration: none;
-				&:active {
-				font-weight: bold;
-				text-decoration: underline;
-				}
-				&:inactive {
-				font-weight: normal;
-				text-decoration: none;
-				}
 				&:hover {
 				font-weight: bold;
-				text-decoration: underline;
-				}
+				text-decoration: underline;}
+				&:active {
+				font-weight: bold;
+				text-decoration: underline;}
 			}
 		}
 	}
