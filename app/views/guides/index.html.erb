@@ -2,23 +2,11 @@
 <h1>Herb Guides</h1>
   <div id="nav">
     <%= link_to 'Home', guides_path %>
-    <%= link_to 'Aloe', @aloe %>
+    <%= link_to 'Aloe', aloe_path %>
   </div>
 </div>
 
 <div id="wrapper">
-<table>
-
-<% @guides.each do |guide| %>
-  <tr>
-    <td><%= link_to 'Show', guide %></td>
-    <td><%= link_to 'Edit', edit_guide_path(guide) %></td>
-    <td><%= link_to 'Destroy', guide, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
 
 <div class="grad">
 <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit. Nullam volutpat orci vel arcu volutpat imperdiet. In eget libero leo, vel iaculis lacus. Mauris metus lectus, luctus vitae ornare congue, ultrices et velit. Etiam a magna ac urna tincidunt vestibulum. Nunc sit amet sapien urna, sed fringilla tortor. Nunc in purus eget augue convallis condimentum nec in leo. Morbi feugiat libero ac nulla aliquam luctus. Proin bibendum adipiscing tincidunt. </p>

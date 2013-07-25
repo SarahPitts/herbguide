@@ -37,6 +37,11 @@ class GuidesController < ApplicationController
     @guide = Guide.find(params[:id])
   end
 
+  def aloe
+
+  end
+end
+
   # POST /guides
   # POST /guides.json
   def create
@@ -80,4 +85,4 @@ class GuidesController < ApplicationController
       format.json { head :no_content }
     end
   end
-end
+
