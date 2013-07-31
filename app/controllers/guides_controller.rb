@@ -38,7 +38,9 @@ class GuidesController < ApplicationController
   end
 
   def aloe
+  end
 
+  def rosemary
   end
 end
 
