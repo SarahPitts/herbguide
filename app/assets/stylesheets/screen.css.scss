@@ -3,11 +3,8 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
- $pink: #FFD2CB;
  $white: #ebe7e4;
- $raspberry: #E86786;
- $blueberry: #96B5AD;
- $blackberry: #281916;
+ $black: #000000;
 
  $green: #628029;
 
@@ -21,10 +18,11 @@
 @import "compass/typography/links/link-colors";
 
 #header {
-		background: $blackberry;
+		background: $black;
 		text-align: left;
 		margin-top: -40px;
 		padding: 20px;
+  		@include single-box-shadow;
 		h1 {
 		color: $white;
 		font-size: 70px;
@@ -32,7 +30,7 @@
 		margin: 40px 0 0 $marginH;
 		}
 		h2 {
-		color: $blueberry;
+		color: $black;
 		margin: 10px 0 30px $marginH + 4%;
 		display:inline-block;
 		font-weight: bold;
@@ -55,17 +53,17 @@
 	}
 
 a {
-color: $blueberry;
+color: $green;
 margin: $margin;
 font-weight: bold;
 }
 
 p {
-color:  $blackberry;
+color:  $black;
 margin: 10px 0 10px 10px;
 
 	a {
-	color: $blueberry;
+	color: $green;
 	margin: 0 0 0 0;
 	font-weight: normal;
 	}
