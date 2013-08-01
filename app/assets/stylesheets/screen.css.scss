@@ -3,8 +3,8 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
- $white: #ebe7e4;
- $black: #000000;
+ $eggshell: #FFF9BF;
+ $charcoal: #222222;
 
  $green: #628029;
 
@@ -18,19 +18,19 @@
 @import "compass/typography/links/link-colors";
 
 #header {
-		background: $black;
+		background: $charcoal;
 		text-align: left;
 		margin-top: -40px;
 		padding: 20px;
   		@include single-box-shadow;
 		h1 {
-		color: $white;
+		color: $eggshell;
 		font-size: 70px;
 		  @include single-text-shadow(2px, 2px);
 		margin: 40px 0 0 $marginH;
 		}
 		h2 {
-		color: $black;
+		color: $charcoal;
 		margin: 10px 0 30px $marginH + 4%;
 		display:inline-block;
 		font-weight: bold;
@@ -38,15 +38,14 @@
 		#nav {
 		margin-top: 30px;
 			a {
-			color: $white;
+			color: $eggshell;
 			margin: $marginH;
 			font-weight: normal;
 			text-decoration: none;
+			font-weight: bold;
 				&:hover {
-				font-weight: bold;
 				text-decoration: underline;}
 				&:active {
-				font-weight: bold;
 				text-decoration: underline;}
 			}
 		}
@@ -59,7 +58,7 @@ font-weight: bold;
 }
 
 p {
-color:  $black;
+color:  $charcoal;
 margin: 10px 0 10px 10px;
 
 	a {
@@ -101,7 +100,7 @@ background: url("aloe.jpg") no-repeat center center fixed;
 .grad {
 	margin: 3%;
 	padding: 1%;
-	background-color: $white;
+	background-color: $eggshell;
 	@include border-radius(10px, 10px);
   	@include single-box-shadow;
 }
