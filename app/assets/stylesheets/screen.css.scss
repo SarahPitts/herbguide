@@ -83,7 +83,16 @@ background: url("herbs.jpg") no-repeat center center fixed;
 -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; }
 
 body.aloe {
-background: url("aloe.jpg") no-repeat center center fixed; 
+background: url("Aloe.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')"; }
+
+body.rosemary {
+background: url("Rosemary.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -105,6 +114,9 @@ background: url("aloe.jpg") no-repeat center center fixed;
 	@include border-radius(10px, 10px);
   	@include single-box-shadow;
   	@include opacity(0.77);
+  	p {
+  	line-height: 1.5em;
+  	}
   	h1 {
 	font-size: 24px;
 	font-weight: bold;
