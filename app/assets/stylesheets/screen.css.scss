@@ -105,5 +105,10 @@ background: url("aloe.jpg") no-repeat center center fixed;
 	@include border-radius(10px, 10px);
   	@include single-box-shadow;
   	@include opacity(0.77);
+  	h1 {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 10px 0 10px 10px;
+	}
 }
 
