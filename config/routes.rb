@@ -8,6 +8,8 @@ Herbguide::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   match '/aloe' => 'guides#aloe'
   match '/rosemary' => 'guides#rosemary'
+  match '/plantain' => 'guides#plantain'
+  match '/chamomile' => 'guides#chamomile'
   # get 'guides/aloe'
   # Keep in mind you can assign values other than :controller and :action
 

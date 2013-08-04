@@ -42,6 +42,12 @@ class GuidesController < ApplicationController
 
   def rosemary
   end
+
+  def plantain
+  end
+
+  def chamomile
+  end
 end
 
   # POST /guides
