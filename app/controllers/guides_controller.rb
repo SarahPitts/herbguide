@@ -48,6 +48,9 @@ class GuidesController < ApplicationController
 
   def chamomile
   end
+
+  def catnip
+  end
 end
 
   # POST /guides
