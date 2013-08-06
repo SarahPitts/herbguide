@@ -41,7 +41,6 @@
 			a {
 			color: $eggshell;
 			margin: $marginH;
-			font-weight: normal;
 			text-decoration: none;
 			font-weight: bold;
 				&:hover {
@@ -49,6 +48,27 @@
 				&:active {
 				text-decoration: underline;}
 			}
+		}
+	}
+
+#footer {
+		background: $charcoal;
+		text-align: center;
+		font-size: 12px;
+  		@include single-box-shadow;
+  		position: fixed;
+    	bottom: 0;
+    	width: 100%;
+		p {
+		color: $eggshell;
+		font-weight: bold;
+		padding: 10px;  
+		}
+		a {
+		color: $eggshell;
+		font-weight: bold;
+		padding: 10px; 
+		text-decoration: underline; 
 		}
 	}
 
@@ -131,7 +151,9 @@ background: url("plantain.JPG") no-repeat center center fixed;
    width:800px;  
    margin:0 auto;
    text-align:left; 
-   positiion: relative;  
+   positiion: relative;
+   min-height: 100%;
+   margin-bottom: 75px;
 }  
 
 .grad {
